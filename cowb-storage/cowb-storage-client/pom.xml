@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cowb-storage</artifactId>
+        <groupId>org.czsd</groupId>
+        <version>${rversion}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>cowb-storage-client</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>cowb-storage-client-embeded-db</module>
+        <module>cowb-storage-client-memory</module>
+        <module>cowb-storage-client-file</module>
+    </modules>
+
+
+</project>
