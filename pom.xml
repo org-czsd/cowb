@@ -58,6 +58,11 @@
             </dependency>
             <dependency>
                 <groupId>org.czsd</groupId>
+                <artifactId>cowb-storage-common</artifactId>
+                <version>${rversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.czsd</groupId>
                 <artifactId>cowb-storage-client</artifactId>
                 <version>${rversion}</version>
             </dependency>
