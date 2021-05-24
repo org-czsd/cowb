@@ -12,10 +12,25 @@ public interface RuleFlowNode {
     Rule rule();
     
     RuleFlowNode pre();
+    
     RuleFlowNode next();
+    
     RuleFlowNode head();
+    
     RuleFlowNode tail();
+    
     int size();
+    
     void add(RuleFlowNode tail);
+    
     boolean hasNext();
+    
+    void head(RuleFlowNode head);
+    
+    void pre(RuleFlowNode pre);
+    
+    void next(RuleFlowNode next);
+    
+    void tail(RuleFlowNode tail);
+    
 }
