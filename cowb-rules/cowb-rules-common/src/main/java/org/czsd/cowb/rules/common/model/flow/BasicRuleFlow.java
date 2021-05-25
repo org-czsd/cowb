@@ -12,6 +12,7 @@ import java.util.Queue;
  * basic rule flow
  */
 public class BasicRuleFlow extends AbstractRuleFlow {
+    
     private RuleFlowNode chain;
     
     @Override

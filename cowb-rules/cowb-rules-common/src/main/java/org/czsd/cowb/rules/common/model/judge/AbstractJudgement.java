@@ -14,19 +14,23 @@ public abstract class AbstractJudgement implements Judgement {
     
     /**
      *  set the condition
+     * @param condition the condition
      */
     abstract void when(Condition condition);
     
     /**
      *  set the the action to be executed when the condition is true
+     * @param action then action
      */
     abstract void then(Action action);
     
     /**
      *  set the the action to be executed when the condition is false
+     * @param action else action
      */
     abstract void elseThen(Action action);
     
+    @Override
     public boolean evaluate(Facts facts) {
         Condition condition = condition();
         if (condition == null){
@@ -35,6 +39,7 @@ public abstract class AbstractJudgement implements Judgement {
         return condition.evaluate(facts);
     }
     
+    @Override
     public Object fire(Facts facts) {
         Action action;
         if (evaluate(facts)){
