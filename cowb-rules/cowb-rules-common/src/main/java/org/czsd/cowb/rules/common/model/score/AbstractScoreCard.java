@@ -10,7 +10,7 @@ import java.util.Collection;
 /**
  * abstract score card
  */
-public abstract  class AbstractScoreCard implements ScoreCard {
+public abstract class AbstractScoreCard implements ScoreCard {
     
     @Override
     public Object fire(Facts facts) {

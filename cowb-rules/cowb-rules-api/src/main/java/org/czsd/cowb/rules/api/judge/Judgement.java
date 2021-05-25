@@ -11,17 +11,20 @@ import org.czsd.cowb.rules.api.common.Rule;
 public interface Judgement extends Rule {
     
     /**
-     *  @return the action to be executed when the condition is true
+     * get the action to be executed when the condition is true
+     *  @return then action
      */
     Action then();
     
     /**
-     *  the action to be executed when the condition is false
+     * get the action to be executed when the condition is false
+     *  @return otherwise action
      */
     Action otherwise();
     
     /**
-     *  the action to be evaluated
+     * get the action to be evaluated
+     * @return the condition
      */
     Condition condition();
     
