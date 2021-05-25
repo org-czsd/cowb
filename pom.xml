@@ -17,6 +17,7 @@
         <module>cowb-transport</module>
         <module>cowb-storage</module>
         <module>cowb-rules</module>
+        <module>cowb-common</module>
     </modules>
     
     <dependencyManagement>
