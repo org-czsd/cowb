@@ -16,7 +16,7 @@ public abstract class AbstractRuleFlow implements RuleFlow{
         Object result = null;
         while(node != null){
             Rule rule = node.rule();
-            rule.fire(facts);
+            result = rule.fire(facts);
             node = node.next();
         }
         return result;
