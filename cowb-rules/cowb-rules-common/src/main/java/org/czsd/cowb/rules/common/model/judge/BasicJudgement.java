@@ -12,6 +12,15 @@ public class BasicJudgement extends AbstractJudgement {
     private Action otherwise;
     private Condition condition;
     
+    public BasicJudgement(Action then, Action otherwise, Condition condition) {
+        this.then = then;
+        this.otherwise = otherwise;
+        this.condition = condition;
+    }
+    
+    public BasicJudgement() {
+    }
+    
     @Override
     public Action then() {
         return then;

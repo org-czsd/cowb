@@ -60,4 +60,24 @@ public abstract class AbstractRuleFlowNode implements RuleFlowNode {
     public boolean hasNext() {
         return this.next != null;
     }
+    
+    @Override
+    public void head(RuleFlowNode head) {
+        this.head = head;
+    }
+    
+    @Override
+    public void pre(RuleFlowNode pre) {
+        this.pre = pre;
+    }
+    
+    @Override
+    public void next(RuleFlowNode next) {
+        this.next = next;
+    }
+    
+    @Override
+    public void tail(RuleFlowNode tail) {
+        this.tail = tail;
+    }
 }
